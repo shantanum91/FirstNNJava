@@ -1,4 +1,4 @@
-package FirstNN;
+package nndemo;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -46,12 +46,11 @@ public class FirstNN {
 		long t0 = System.currentTimeMillis();
 
 		DataSetIterator dsi = getDatasetIterator("mnist_train.obj");
-		int rngSeed = 123;
 		int nEpochs = 20;
 
 		System.out.println("Build model....");
 		MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
-				.seed(rngSeed)
+				.seed(123)
 				.updater(new Sgd(3))
 				// .l2(1e-4)
 				.list()

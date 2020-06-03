@@ -1,4 +1,4 @@
-package FirstNN;
+package nndemo;
 
 import java.io.File;
 import java.io.FileOutputStream;
